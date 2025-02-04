@@ -1,0 +1,40 @@
+. {
+    background-color: white;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.icon-header {
+    width: 32px;
+    height: 32px;
+    top: 8px;
+    left: 529px;
+}
+
+h1 {
+    color: #2E0039;
+    /*width: 156px;*/
+    /*height: 20px;*/
+    /*top: 30px;*/
+    left: 572px;
+}
+
+.shadow-line {
+    width: 100%;
+    height: 48px;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}

@@ -1,0 +1,135 @@
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    top: 100px;
+    position: relative;
+}
+
+.convertPanelBox {
+    border-radius: 21px;
+    background-color: #2E0039;
+    width: 30%;
+    height: 60%;
+    display: flex;
+    /*justify-content: flex-start; !* Centra el contenido horizontalmente *!*/
+    align-items: flex-start; /* Centra el contenido verticalmente */
+    flex-direction: column;
+    box-shadow: black 1px 1px 1px;
+}
+
+.convertPanelBox-a {
+    padding: 10px;
+    margin: 10px;
+    height: 20%;
+
+}
+
+.convertPanelBox-a p {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.convertPanelBox-selects-container {
+    padding: 10px;
+
+    /*height: 20%;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    /*margin-top: 100px;*/
+
+}
+
+select {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none; /* Quita todos los bordes */
+    border-bottom: 2px solid #ffffff; /* Añade un borde inferior */
+    width: 218px;
+    /*outline: none; !* Opcional: Quita el contorno al hacer focus *!*/
+    /* Opcional: Fondo transparente */
+    appearance: none; /* Opcional: Quita la apariencia por defecto del select */
+    -webkit-appearance: none; /* Para compatibilidad con navegadores basados en WebKit */
+    -moz-appearance: none; /* Para compatibilidad con Firefox */
+
+    /* Ruta al SVG local */
+    background: url('../../assets/Caret-down.svg') no-repeat right -0.5rem center;
+    /*padding-right: 2rem; !* Espacio para la flecha *!*/
+}
+
+select:focus {
+    outline: none;
+}
+
+select option {
+    background-color: #2E0039;
+    color: white;
+    border-color: white;
+}
+
+button {
+    background: transparent;
+    border: none;
+    width: 100px;
+}
+
+img {
+    width: 24px;
+    height: 24px;
+}
+
+input {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none; /* Quita todos los bordes */
+    background: transparent;
+    border-bottom: 2px solid #ffffff; /* Añade un borde inferior */
+    width: 218px;
+    /*outline: none; !* Opcional: Quita el contorno al hacer focus *!*/
+    /* Opcional: Fondo transparente */
+    appearance: none; /* Opcional: Quita la apariencia por defecto del select */
+    -webkit-appearance: none; /* Para compatibilidad con navegadores basados en WebKit */
+    -moz-appearance: none; /* Para compatibilidad con Firefox */
+}
+
+/* Para navegadores basados en WebKit (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none; /* Oculta las flechas */
+    margin: 0; /* Elimina el margen adicional */
+}
+
+/* Para Firefox */
+input[type="number"] {
+    -moz-appearance: textfield; /* Convierte el input en un campo de texto normal */
+}
+
+input:focus {
+    outline: none;
+}
+
+.saved-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.resultUnit {
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+}
